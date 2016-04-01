@@ -1,11 +1,22 @@
 CHANGES
 =======
 
+0.0.3
+-----
+
+* Add pagination helpers
+* Fix 'import neutron' hacking check
+* Add in missing constants
+* Remove unused pngmath Sphinx extension
+
 0.0.2
 -----
 
 * Updated from global requirements
+* Callbacks: add precommit support
 * Add constants for macvtap agent
+* Callbacks: add in missing callback resources
+* Add Collector Agent type string
 * Add a hacking check against importing neutron
 * Lib specific hacking rules
 * Move some common test and framework goo into neutron-lib

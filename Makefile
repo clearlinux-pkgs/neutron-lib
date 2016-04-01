@@ -1,5 +1,5 @@
 PKG_NAME := neutron-lib
-URL := http://tarballs.openstack.org/neutron-lib/neutron-lib-0.0.2.tar.gz
+URL := http://tarballs.openstack.org/neutron-lib/neutron-lib-0.0.3.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
