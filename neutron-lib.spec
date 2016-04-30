@@ -4,7 +4,7 @@
 #
 Name     : neutron-lib
 Version  : 0.1.0
-Release  : 4
+Release  : 5
 URL      : http://tarballs.openstack.org/neutron-lib/neutron-lib-0.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/neutron-lib/neutron-lib-0.1.0.tar.gz
 Summary  : Neutron shared routines and utilities
