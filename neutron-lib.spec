@@ -4,46 +4,29 @@
 #
 Name     : neutron-lib
 Version  : 0.1.0
-Release  : 9
+Release  : 10
 URL      : http://tarballs.openstack.org/neutron-lib/neutron-lib-0.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/neutron-lib/neutron-lib-0.1.0.tar.gz
 Summary  : Neutron shared routines and utilities
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: neutron-lib-python
-BuildRequires : SQLAlchemy-python
-BuildRequires : Sphinx-python
-BuildRequires : Tempita-python
-BuildRequires : alembic-python
-BuildRequires : anyjson-python
-BuildRequires : docutils-python
-BuildRequires : extras
-BuildRequires : msgpack-python-python
-BuildRequires : netaddr
-BuildRequires : netifaces-python
-BuildRequires : os-testr-python
-BuildRequires : oslo.db-python
-BuildRequires : oslo.messaging-python
-BuildRequires : oslo.service-python
-BuildRequires : oslo.utils-python
+Requires: Babel
+Requires: debtcollector
+Requires: oslo.config
+Requires: oslo.db
+Requires: oslo.i18n
+Requires: oslo.log
+Requires: oslo.messaging
+Requires: oslo.service
+Requires: oslo.utils
+Requires: pbr
+BuildRequires : configparser-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pyrsistent-python
-BuildRequires : pytest
 BuildRequires : python-dev
-BuildRequires : python-editor-python
-BuildRequires : python-mimeparse-python
 BuildRequires : python3-dev
-BuildRequires : repoze.lru-python
 BuildRequires : setuptools
-BuildRequires : sqlalchemy-migrate-python
-BuildRequires : sqlparse
-BuildRequires : tox
-BuildRequires : traceback2-python
-BuildRequires : unittest2-python
-BuildRequires : virtualenv
 
 %description
 ===============================
@@ -54,27 +37,25 @@ Neutron shared routines and utilities
 %package python
 Summary: python components for the neutron-lib package.
 Group: Default
-Requires: oslo.db-python
-Requires: oslo.messaging-python
-Requires: oslo.service-python
-Requires: oslo.utils-python
 
 %description python
 python components for the neutron-lib package.
 
 
 %prep
-cd ..
 %setup -q -n neutron-lib-0.1.0
 
 %build
+export LANG=C
+export SOURCE_DATE_EPOCH=1489332590
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1489332590
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
