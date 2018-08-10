@@ -4,7 +4,7 @@
 #
 Name     : neutron-lib
 Version  : 1.18.0
-Release  : 11
+Release  : 12
 URL      : https://files.pythonhosted.org/packages/1d/62/347baad0aaf1ee1e62d0d5b54bae3d442da8813dba083e133b0143afc63f/neutron-lib-1.18.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1d/62/347baad0aaf1ee1e62d0d5b54bae3d442da8813dba083e133b0143afc63f/neutron-lib-1.18.0.tar.gz
 Summary  : Neutron shared routines and utilities
@@ -38,6 +38,7 @@ Requires: python-mock
 Requires: reno
 Requires: six
 Requires: stevedore
+Requires: weakrefmethod
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
@@ -79,7 +80,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533874194
+export SOURCE_DATE_EPOCH=1533908535
 python3 setup.py build -b py3
 
 %install
