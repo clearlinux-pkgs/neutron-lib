@@ -1,6 +1,45 @@
 CHANGES
 =======
 
+1.19.0
+------
+
+* Fix port\_range\_max attribute definition
+* policy-in-code support in neutron-lib
+* Switch to oslo\_messaging.ConfFixture.transport\_url
+* Use templates for cover and lower-constraints
+* Fix placement\_client max microversion
+* Show is\_default as a valid parameter for subnet pool creation
+* Fix the mistake of lbaas api-ref
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* api-ref: Add port-resource-request extension
+* Add is\_filter to network\_ip\_availability
+* Introduce Port resource request extension
+* Mechanism driver API: resource\_provider\_uuid5\_namespace
+* Placement: utils
+* Placement: constants
+* Placement client: move to neutron\_lib.placement
+* Placement client: optional RP generations
+* Placement client: ensure\_resource\_provider
+* Placement client: always return body
+* Update list of skipped bandit plugins
+* Add 'project\_default' attribute to Network
+* Update the segment api extension
+* Make the DB retry mechanism more robust
+* api-ref, fwaas-v2: Remove 'status' from request
+* Adds qos-gateway-ip extension api definition
+* Add 'is\_filter' and 'is\_sort\_key' to fip pf attributes
+* api-ref for floating IPs port forwardings
+* Add keyword 'is\_filter' to binding extended
+* Update reno for stable/rocky
+* Mac learning extension description
+* Add is\_filter to port\_mac\_address\_regenerate
+* net\_utils: Add a random mac generator
+* Ingress direction for min bandwidth rule
+
 1.18.0
 ------
 
@@ -9,6 +48,8 @@ CHANGES
 * rehome rpc and related plumbing
 * Add shim extension sort-key-validation
 * Extend port\_forwardings field in Floatingip response
+* Mechanism driver API: responsible\_for\_rsc\_provider
+* Add two fields to NeutronDbObjectDuplicateEntry
 
 1.17.0
 ------
@@ -36,6 +77,7 @@ CHANGES
 * Remove os-testr from lower-constraints
 * Remove os-testr from test-requirements
 * Add a shim extension standard-attr-segment
+* api-ref: add availability\_zone extension
 
 1.15.0
 ------
