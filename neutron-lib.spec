@@ -4,15 +4,15 @@
 #
 Name     : neutron-lib
 Version  : 1.19.0
-Release  : 15
+Release  : 16
 URL      : https://files.pythonhosted.org/packages/33/b8/805997234771a68aaf35105d5667ee0d7da73aa182d07285cdf7e38a8892/neutron-lib-1.19.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/33/b8/805997234771a68aaf35105d5667ee0d7da73aa182d07285cdf7e38a8892/neutron-lib-1.19.0.tar.gz
 Summary  : Neutron shared routines and utilities
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: neutron-lib-python3
-Requires: neutron-lib-license
-Requires: neutron-lib-python
+Requires: neutron-lib-license = %{version}-%{release}
+Requires: neutron-lib-python = %{version}-%{release}
+Requires: neutron-lib-python3 = %{version}-%{release}
 Requires: SQLAlchemy
 Requires: Sphinx
 Requires: WebOb
@@ -81,13 +81,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537928405
+export SOURCE_DATE_EPOCH=1541268005
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/neutron-lib
-cp LICENSE %{buildroot}/usr/share/doc/neutron-lib/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/neutron-lib
+cp LICENSE %{buildroot}/usr/share/package-licenses/neutron-lib/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -98,7 +98,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/neutron-lib/LICENSE
+/usr/share/package-licenses/neutron-lib/LICENSE
 
 %files python
 %defattr(-,root,root,-)
