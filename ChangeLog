@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+1.20.0
+------
+
+* Disable port number 0 for floating IP port\_forwarding
+* Support custom filters in OVO
+* rehome the resource\_extend db module
+* Fix random\_mac\_generator to make proper EUI64s
+* Allow advsvc role to create port in foreign tenant
+* Add api-ref for qos-rules-alias extension
+* Use QoS constants definitions
+* Define qos-rules-alias extension
+* Use authorize instead of enforce in policy
+* build universal wheels
+* PlacementAPIClient.update\_resource\_class client call missing argument
+* Let Neutron enforce rule on create\_subnet with segment\_id [neutron-lib part]
+
 1.19.0
 ------
 
