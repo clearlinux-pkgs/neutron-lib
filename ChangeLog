@@ -1,6 +1,23 @@
 CHANGES
 =======
 
+1.21.0
+------
+
+* Fix QoS alias api definition
+* Fix default value of subnet attribute for subnet onboard
+* Support fetching specific db column in OVO
+* Placement client: improve Placement 4xx exceptions
+* Placement client: do not swallow exceptions
+* Placement client: clean up docstrings
+* rehome get\_updatable\_fields into object utils
+* Add ipv6 canonical address converter to API
+* Check if a port can be bound to a virtual bridge
+* fix DBResourceExtendFixture fixture
+* Update min tox version to 2.3.2
+* Adapt to changed resource class names
+* Add shim extension l3-port-ip-change-not-allowed
+
 1.20.0
 ------
 
@@ -42,6 +59,7 @@ CHANGES
 * Placement client: ensure\_resource\_provider
 * Placement client: always return body
 * Update list of skipped bandit plugins
+* api-ref: document floating ip pools endpoint
 * Add 'project\_default' attribute to Network
 * Update the segment api extension
 * Make the DB retry mechanism more robust
