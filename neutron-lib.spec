@@ -4,7 +4,7 @@
 #
 Name     : neutron-lib
 Version  : 1.21.0
-Release  : 18
+Release  : 19
 URL      : https://files.pythonhosted.org/packages/69/e9/2eaeedb38d15d39524ec179888b333f24d1fcd7cadb18dcb0b64279a8fc2/neutron-lib-1.21.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/69/e9/2eaeedb38d15d39524ec179888b333f24d1fcd7cadb18dcb0b64279a8fc2/neutron-lib-1.21.0.tar.gz
 Summary  : Neutron shared routines and utilities
@@ -81,7 +81,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1543988721
+export SOURCE_DATE_EPOCH=1543998435
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
