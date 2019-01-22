@@ -1,11 +1,30 @@
 CHANGES
 =======
 
+1.22.0
+------
+
+* Add smartnic port type to VNIC\_TYPES
+* api-ref: document network-segment-range extension
+* Fix the misspelling of "interface"
+* Modify the judgment method of CIDR and Add utests
+* Add network-segment-range extension API definition
+* sync neutron.common.exceptions into neutron-lib
+* rehome db api orm event listener functions
+* Revert "Add function helpers.compare\_dict"
+* Add traffic control exceptions
+* api-ref: document uplink status propagation
+* Handle ValueError in canonical address convertion
+* Update devel info: mailing list
+* Change openstack-dev to openstack-discuss
+* Add function helpers.compare\_dict
+
 1.21.0
 ------
 
 * Fix QoS alias api definition
 * Fix default value of subnet attribute for subnet onboard
+* context: Warn on mixed uses of old and new db methods
 * Support fetching specific db column in OVO
 * Placement client: improve Placement 4xx exceptions
 * Placement client: do not swallow exceptions
