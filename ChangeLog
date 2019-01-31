@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+1.23.0
+------
+
+* Fix pep8 E126
+* Add missing ws seperator between words
+* Extend methods for network segment range support
+* doc neutron-lib current
+* Remove unnecessary attributes and specs from subnet\_onboard API
+* New agent attribute: resources\_synced
+* Use oslo.db jitter in our db retries
+* Move network segment range types to lib constants
+
 1.22.0
 ------
 
@@ -10,6 +22,7 @@ CHANGES
 * Modify the judgment method of CIDR and Add utests
 * Add network-segment-range extension API definition
 * sync neutron.common.exceptions into neutron-lib
+* Add a new configuration parameter rpc\_response\_max\_timeout
 * rehome db api orm event listener functions
 * Revert "Add function helpers.compare\_dict"
 * Add traffic control exceptions
