@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+1.24.0
+------
+
+* Exceptions for: Drive binding by placement allocation
+* rehome trunk related callback resource names
+* Delete floating IPs on network turned internal
+* Increase tempest-full jobs timeout to 3h
+* Fix exception logging formatting
+
 1.23.0
 ------
 
@@ -12,6 +21,7 @@ CHANGES
 * New agent attribute: resources\_synced
 * Use oslo.db jitter in our db retries
 * Move network segment range types to lib constants
+* Rehome constant: DHCPV6\_CLIENT\_PORT
 
 1.22.0
 ------
