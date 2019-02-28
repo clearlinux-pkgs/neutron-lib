@@ -1,9 +1,30 @@
 CHANGES
 =======
 
+1.25.0
+------
+
+* rehome sqlalchemytypes
+* Introduce subnet pool prefix operations extension
+* Add exception to prevent overlapped segment ranges
+* Add NETWORK\_SEGMENT\_RANGE plugin constant
+* Remove ml2's accidental dependency on l3
+* 'interconnection' API extension definition (neutron-interconnection)
+* rehome trunk service constants
+* Catch only MessageDeliveryFailure exceptions
+* Add security-group as parameter to RBAC api
+* Rehome base upgrade checks class
+* Remove neutron\_lib.db from db profiling projects
+* Add policy module to neutron-lib
+* Add setproctitle support to the workers module
+* add python 3.7 unit test job
+* Bump lower version of oslo.db to one that includes jitter argument
+* rehome remaining common constants
+
 1.24.0
 ------
 
+* Add traffic control constants
 * Exceptions for: Drive binding by placement allocation
 * rehome trunk related callback resource names
 * Delete floating IPs on network turned internal
@@ -39,6 +60,7 @@ CHANGES
 * api-ref: document uplink status propagation
 * Handle ValueError in canonical address convertion
 * Update devel info: mailing list
+* Add RouterNotFoundInRouterFactory exception
 * Change openstack-dev to openstack-discuss
 * Add function helpers.compare\_dict
 
