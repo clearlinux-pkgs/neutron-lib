@@ -1,6 +1,32 @@
 CHANGES
 =======
 
+1.26.0
+------
+
+* update db fixtures for consumption testing
+* Add noauth option for placement client
+* Dropping the py35 testing
+* remove use of legacy modules
+* fix WarningsFixture for public consumption
+* Rehome provider\_network\_attribute\_updates\_supported to API definition
+* Adds PORT\_FORWARDING\_FLOATINGIP\_KEY
+* rehome neutron.objects.common\_types
+* Change exception types in network\_segment\_range
+* rehome neutron.objects.logapi.event\_types
+* Fix a typo
+* Add 'IP' and 'HOPOPT' protocols to constants
+* rehome neutron.objects.extensions.standardattributes
+* rehome neutron.db.standard\_attr
+* rehome model\_query function
+* Update master for stable/stein
+* standard-attr for network-segment-range api-ref
+* Add methods for network segment range support
+* rehome subnet service types extension
+* api-ref: remove 'external\_network\_bridge' from agent
+* Allow filtering/sorting by the 'mtu' field
+* rehome used neutron.tests.tools
+
 1.25.0
 ------
 

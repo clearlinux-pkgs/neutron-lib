@@ -1,5 +1,5 @@
 PKG_NAME := neutron-lib
-URL = https://files.pythonhosted.org/packages/1f/a0/0b3641e07135dc2ca29d4377ced7714507555da5fd73650851da3e618849/neutron-lib-1.25.0.tar.gz
+URL = https://files.pythonhosted.org/packages/e9/52/f0e7f6aed202d88f2ede08f59619fe06f13a74d8123558006dd726b0d5f8/neutron-lib-1.26.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
