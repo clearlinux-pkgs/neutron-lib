@@ -1,12 +1,28 @@
 CHANGES
 =======
 
+1.27.0
+------
+
+* sync sql fixtures from neutron
+* Cap sphinx for py2 to match global requirements
+* Update Python 3 test runtimes for Train
+* Add sort\_keys retrieving function
+* Blacklist bandit 1.6.0 due to directory exclusion bug
+* use once rather than always for filterwarnings
+* Use AssociationProxyInstance instead of AssociationProxy
+* Update hacking version
+* Replace git.openstack.org URLs with opendev.org URLs
+* OpenDev Migration Patch
+* Remove "tags" listed in Create port POST api-ref
+
 1.26.0
 ------
 
 * update db fixtures for consumption testing
 * Add noauth option for placement client
 * Dropping the py35 testing
+* L3 Conntrack Helper Extension
 * remove use of legacy modules
 * fix WarningsFixture for public consumption
 * Rehome provider\_network\_attribute\_updates\_supported to API definition
