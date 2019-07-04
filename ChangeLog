@@ -1,6 +1,23 @@
 CHANGES
 =======
 
+1.28.0
+------
+
+* make sql fixtures public
+* Update flake8 style enforcement
+* Introduce NetworkAddressScopeAffinityError
+* Loopback address routing should be invalid
+* Add new vif\_details parameters
+* Fix subnet\_dns\_publish\_fixed\_ip extension
+* Add 'dns\_publish\_fixed\_ip' attribute to Subnet
+* Add rarp protocol for neutron constants
+* Add conntrack helper to parent resource mapping
+* placement client: fix routed prov networks working
+* [api-ref] Update info about internal\_ip\_address in FIP port forwarding
+* [api-ref] Add short warning about ANY IP address in allowed address pair
+* fix doc periodic log url
+
 1.27.0
 ------
 
