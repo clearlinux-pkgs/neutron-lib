@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+1.29.0
+------
+
+* New api-def: extraroute-atomic
+* Ensure that extended ethertypes still work by name
+* Update api-ref location
+* Mention that list of e.g. IDs is supported in GET requests
+* Update api-ref location / version
+* Add ethertype validator for custom ethertype validation
+* Fix - L3 Conntrack Helper validator
+* Filter placement API endpoint by type too
+* Only have one number to name mapping for IPv6 ICMP
+* Add shim extension admin\_state\_down\_before\_update
+* Add Python 3 Train unit tests
+
 1.28.0
 ------
 
