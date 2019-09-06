@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+1.29.1
+------
+
+* Introduce new member actions additively
+
 1.29.0
 ------
 
