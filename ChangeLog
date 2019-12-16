@@ -1,6 +1,24 @@
 CHANGES
 =======
 
+1.30.0
+------
+
+* add "stateful-security-group" api extension
+* Change the requirements for the subnet\_dns\_publish\_fixed\_ip extension
+* Add description field in port forwarding API
+* Remove 'interconnection' API extension definition (neutron-interconnection)
+* Stop configuring install\_command in tox
+* Remove fwaas\_v1 exceptions and definitions
+* Allow <project\_id>, <project\_name>, <user\_id> and <user\_name> as DNS label
+* Fix rendering of api-ref main page
+* install neutron\_lib international messages
+* Add retry and debug logs to NoAuthClient of placement client
+* Add missing DHCP port numbers
+* Update master for stable/train
+* Remove Neutron LBaaS
+* PDF documentation build
+
 1.29.1
 ------
 
