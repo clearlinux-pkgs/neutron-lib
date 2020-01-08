@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+1.31.0
+------
+
+* Handle generation conflicts caused by concurrent updates
+* Pass on missing implementation while filtering
+* Add "qos\_network\_policy\_id" field to "port" definition
+
 1.30.0
 ------
 
