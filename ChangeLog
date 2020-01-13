@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* Fix new parameter added in "qos\_port\_network\_policy" API
+* Stop testing Python 2
+* Extension for tagging ports during bulk creation
+
 1.31.0
 ------
 
