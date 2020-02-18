@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Extend qos DriverBase with validate\_rule\_for\_port()
+* [Api-Ref][Docs] Change dns\_assignment parameter to be list
+* Remove library "six"
+
 2.0.0
 -----
 
