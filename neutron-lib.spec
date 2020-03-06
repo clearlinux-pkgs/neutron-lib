@@ -4,7 +4,7 @@
 #
 Name     : neutron-lib
 Version  : 2.1.0
-Release  : 38
+Release  : 39
 URL      : https://files.pythonhosted.org/packages/f6/4d/a429e428994d8a6b62bc244d033229a553d6d6ba29702a8259b592a61891/neutron-lib-2.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f6/4d/a429e428994d8a6b62bc244d033229a553d6d6ba29702a8259b592a61891/neutron-lib-2.1.0.tar.gz
 Summary  : Neutron shared routines and utilities
@@ -62,31 +62,8 @@ BuildRequires : setproctitle
 BuildRequires : stevedore
 
 %description
-========================
 Team and repository tags
-========================
-
-.. image:: https://governance.openstack.org/tc/badges/neutron-lib.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-===============================
-neutron-lib
-===============================
-
-Neutron shared routines and utilities
-
-* Free software: Apache license
-* Documentation: https://docs.openstack.org/neutron-lib/latest/
-* Source: https://opendev.org/openstack/neutron-lib
-* Bugs: https://bugs.launchpad.net/neutron
-* Release notes: https://docs.openstack.org/releasenotes/neutron-lib/
-
-Features
---------
-
-* TODO
+        ========================
 
 %package license
 Summary: license components for the neutron-lib package.
@@ -109,7 +86,30 @@ python components for the neutron-lib package.
 Summary: python3 components for the neutron-lib package.
 Group: Default
 Requires: python3-core
-Provides: pypi(neutron-lib)
+Provides: pypi(neutron_lib)
+Requires: pypi(keystoneauth1)
+Requires: pypi(netaddr)
+Requires: pypi(os_ken)
+Requires: pypi(os_traits)
+Requires: pypi(oslo.concurrency)
+Requires: pypi(oslo.config)
+Requires: pypi(oslo.context)
+Requires: pypi(oslo.db)
+Requires: pypi(oslo.i18n)
+Requires: pypi(oslo.log)
+Requires: pypi(oslo.messaging)
+Requires: pypi(oslo.policy)
+Requires: pypi(oslo.serialization)
+Requires: pypi(oslo.service)
+Requires: pypi(oslo.utils)
+Requires: pypi(oslo.versionedobjects)
+Requires: pypi(osprofiler)
+Requires: pypi(pbr)
+Requires: pypi(pecan)
+Requires: pypi(setproctitle)
+Requires: pypi(sqlalchemy)
+Requires: pypi(stevedore)
+Requires: pypi(webob)
 
 %description python3
 python3 components for the neutron-lib package.
@@ -124,8 +124,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583186557
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583537644
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
