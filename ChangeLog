@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* Revert "Remove warning message when using old and new engine facade"
+* Remove warning message when using old and new engine facade
+* Fix definition of the fip\_pf\_description api extension
+* Add is\_sort\_key for vpnaas attribute maps
+* Introduce rbac-subnetpool api extension
+* Introduce rbac-address-scope api extension
+* Update the minversion parameter
+
 2.1.0
 -----
 
