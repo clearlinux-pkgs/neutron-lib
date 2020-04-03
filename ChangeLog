@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.3.0
+-----
+
+* Switch to hacking 2.0
+* Use "unittest.mock" library and drop "mock" installation
+* Add SubnetInUseByIPsecSiteConnection in vpnaas exception
+
 2.2.0
 -----
 
@@ -8,6 +15,7 @@ CHANGES
 * Remove warning message when using old and new engine facade
 * Fix definition of the fip\_pf\_description api extension
 * Add is\_sort\_key for vpnaas attribute maps
+* Remove TooManyExternalNetworks exception class
 * Introduce rbac-subnetpool api extension
 * Introduce rbac-address-scope api extension
 * Update the minversion parameter
