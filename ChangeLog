@@ -1,6 +1,27 @@
 CHANGES
 =======
 
+2.4.0
+-----
+
+* Add new shim API extension for dns domain with keywords
+* [OVN] Add distributed device\_owner
+* Add agent process name constants alongside type
+* [Docs] Note about port's binding\_profile update
+* Correctly define DHCP port numbers for IPv4
+* Check time to apply resource helper functions
+* Migrate timecost decorator to neutron-lib
+* Remove translation sections from setup.cfg
+* Rehome abstract class LinuxInterfaceDriver definition
+* Remove redefined constant
+* Switch to newer openstackdocstheme and reno versions
+* Fix policy enforcement for network mtu
+* Add aggressive negotiation mode for ikepolicy
+* Update to victoria jobs template
+* Fix errors found by new pycodestyle
+* Update to hacking 3.0
+* Update master for stable/ussuri
+
 2.3.0
 -----
 
