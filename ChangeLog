@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+2.5.0
+-----
+
+* Change "propagate\_uplink\_status" default value to True
+* New api-def: port-numa-affinity-policy
+* Add address group exceptions
+* Add DEVICE\_OWNER\_ROUTED constant
+* API definition for SG group rules address groups
+* Add API definition for SG rule's normalized\_cidr field
+* Add "supported\_extensions" method to MechanismDriver
+* Neutron agent-list API added with sort\_key keyword
+* Change policy on neutron-lib migration
+* Metadata addresses
+* [FWaaS] Add note about deprecation of the neutron-fwaas project
+
 2.4.0
 -----
 
