@@ -1,9 +1,23 @@
 CHANGES
 =======
 
+2.6.0
+-----
+
+* New exception QosPlacementAllocationConflict
+* Add placement client methods for allocations
+* Use importlib to take place of imp module
+* Add remote\_address\_group\_id field in SG rules
+* Add source\_ip\_prefix and destination\_ip\_prefix to metering label rules
+* Deprecate 'remote\_ip\_prefix' parameter in metering label rules
+* Log time of the apply\_func only if it took more than 0.1 second
+* Fix: port attribute name propagate\_uplink\_status
+* Add neutron-tempest-plugin-api job to be gating in neutron-lib
+
 2.5.0
 -----
 
+* [api-ref] Added warning about overwriting router's default routes
 * Change "propagate\_uplink\_status" default value to True
 * New api-def: port-numa-affinity-policy
 * Add address group exceptions
