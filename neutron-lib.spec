@@ -4,7 +4,7 @@
 #
 Name     : neutron-lib
 Version  : 2.6.0
-Release  : 45
+Release  : 46
 URL      : https://files.pythonhosted.org/packages/6d/2d/df42febf17faa55c4549f3eeae1a6fdc6b24b75e2c2a319357d451ac8111/neutron-lib-2.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6d/2d/df42febf17faa55c4549f3eeae1a6fdc6b24b75e2c2a319357d451ac8111/neutron-lib-2.6.0.tar.gz
 Summary  : Neutron shared routines and utilities
